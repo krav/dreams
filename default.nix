@@ -1,4 +1,5 @@
-with (import <nixpkgs> {});
+{ pkgs ? import <nixpkgs> {} }:
+with pkgs;
 let
   gems = bundlerEnv {
     name = "dreams";
@@ -8,4 +9,10 @@ let
 in stdenv.mkDerivation {
   name = "dreams";
   buildInputs = [ gems bundix ruby nodejs imagemagick ];
+  src = ./.;
+  phases = [ "installPhase" ];
+  installPhase = ''
+    mkdir -p $out/bin
+  '';
 }
+
