@@ -7,5 +7,5 @@ let
   };
 in stdenv.mkDerivation {
   name = "dreams";
-  buildInputs = [ gems bundix ruby ];
+  buildInputs = [ gems bundix ruby nodejs imagemagick ];
 }
