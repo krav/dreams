@@ -8,7 +8,7 @@ let
   };
 in stdenv.mkDerivation {
   name = "dreams";
-  buildInputs = [ gems bundix ruby nodejs imagemagick ];
+  buildInputs = [ gems ruby nodejs imagemagick ];
   src = ./.;
   phases = [ "installPhase" ];
   installPhase = ''
