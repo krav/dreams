@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '~> 2.5.1'
+ruby '>= 2.5.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.10'
+gem 'rails', '~> 5.0.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -24,6 +24,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise', '4.4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'omniauth-facebook'
+gem 'omniauth-saml'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -33,9 +35,6 @@ gem 'devise', '4.4.0'
 
 # Use HAML for views
 gem 'haml'
-
-# Enable Facebook authentication.
-gem 'omniauth-facebook'
 
 # Admin backend
 gem 'activeadmin', github: 'activeadmin'
@@ -103,7 +102,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3.1'
   # For environment vars
   gem 'dotenv-rails'
 end

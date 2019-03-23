@@ -923,6 +923,17 @@
     };
     version = "1.4.0";
   };
+  omniauth-saml = {
+    dependencies = ["omniauth" "ruby-saml"];
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "04kmmwyw9vk24fkpg1r3q3izf187qrcklk48k52lrbm56q097zxs";
+      type = "gem";
+    };
+    version = "1.8.1";
+  };
   orm_adapter = {
     groups = ["default"];
     platforms = [];
@@ -1283,6 +1294,17 @@
       type = "gem";
     };
     version = "3.5.0";
+  };
+  ruby-saml = {
+    dependencies = ["nokogiri"];
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "12f3mmyds4y8f7535p79xzx0wnp7rj02h1fp2x3j2hy5vrkmz2k4";
+      type = "gem";
+    };
+    version = "1.9.0";
   };
   sass = {
     groups = ["default"];
