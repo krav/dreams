@@ -39,12 +39,12 @@
     dependencies = ["arbre" "formtastic" "formtastic_i18n" "inherited_resources" "jquery-rails" "kaminari" "railties" "ransack" "sass" "sprockets" "sprockets-es6"];
     source = {
       fetchSubmodules = false;
-      rev = "8a597c4370b4c9701d339a3a87d11efd2aee7c2d";
-      sha256 = "13azmbsrrmwf8mi2vjr5d0bxxsv3vqp19dmk0lx96nh8mrd40w94";
+      rev = "21469050740f9d5fba2c584296a9d3c278f2fd09";
+      sha256 = "027lpxn4wnzxah4djg1xypr5akv8c1r4vpc94z34hgx8rxda97xm";
       type = "git";
       url = "git://github.com/activeadmin/activeadmin.git";
     };
-    version = "2.0.0.alpha";
+    version = "2.0.0.rc1";
   };
   activejob = {
     dependencies = ["activesupport" "globalid"];
