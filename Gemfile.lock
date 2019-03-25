@@ -419,6 +419,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  activesupport
   acts-as-taggable-on (~> 4.0)
   awesome_print
   aws-sdk (< 2)
