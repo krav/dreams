@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 ruby '~> 2.5.1'
 
-gem 'activesupport'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.7'
 # Use SCSS for stylesheets
@@ -25,6 +24,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise', '4.4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'omniauth-facebook'
+gem 'omniauth-saml'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -34,9 +35,6 @@ gem 'devise', '4.4.0'
 
 # Use HAML for views
 gem 'haml'
-
-# Enable Facebook authentication.
-gem 'omniauth-facebook'
 
 # Admin backend
 gem 'activeadmin', github: 'activeadmin'
